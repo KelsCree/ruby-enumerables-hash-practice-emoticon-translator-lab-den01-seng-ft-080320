@@ -22,6 +22,8 @@ def get_japanese_emoticon(file_path, emoji)
     library.each do |meaning, symbol|
       if emoji == symbol[:english]
         return [:japanese]
+      else
+        return 
       end
 end
 
