@@ -29,7 +29,7 @@ end
 def get_english_meaning
    library = load_library(file_path)
    library.each do |meaning, symbol|
-     if emoji == symbol[:english]
+     if emoji == symbol[:japanese]
        return meaning
  end
  "Sorry, that emoticon was not found"
