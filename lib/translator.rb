@@ -27,7 +27,7 @@ end
 def get_english_meaning(file_path, emoji)
    library = load_library(file_path)
    library.each do |meaning, symbol|
-     binding.pry
+     #binding.pry
      return meaning if emoji == symbol[:japanese]
  end
  "Sorry, that emoticon was not found"
