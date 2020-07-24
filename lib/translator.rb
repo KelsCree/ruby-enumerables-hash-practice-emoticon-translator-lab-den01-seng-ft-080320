@@ -16,7 +16,7 @@ def load_library(file_path)
     result
 end
 
-def get_japanese_emoticon(file_path = "./lib/emoticons.yml", emoji)
+def get_japanese_emoticon(file_path, emoji)
    library = load_library(file_path)
     library.each do |meaning, symbol|
       return emoji[:japanese] if symbol[:english] == emoji
